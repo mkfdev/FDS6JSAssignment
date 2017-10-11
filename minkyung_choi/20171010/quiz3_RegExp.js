@@ -4,23 +4,9 @@
 //이면 false를 리턴하고 '1234'라면 true를 리턴한다
 
 function alphaString46(s) {
-
-  // 강사님 풀이
-  // if (!s) return false;
-  // var len = s.length;
-  // return ((len >= 4 && len <= 6) && !isNaN(s));
-
-  //isNaN(Not a Number)가 fasle이면 숫자임
-  if (isNaN(s) == false) {
-
-    //문자열(s)의 length
-    var len = s.length;
-
-    if (len >= 4 && len <= 6)
-      return 'true';
-  }
-
-  return 'false';
+  // var reg = /[0-9]{4,6}/;
+  // return reg.test(s);
+  return /^\d{4,6}$/.test(s);
 }
 
 console.log(alphaString46('1234')); // true
