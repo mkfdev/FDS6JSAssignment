@@ -29,7 +29,7 @@ function getCount88() {
   for (var i = 0; i < 10001; i++) {
     str += i;
   }
-
+  //return str.match(/8/g).length;
   var len = str.length;
   for (var j = 0; j < len; j++) {
     if (str[j] === '8')

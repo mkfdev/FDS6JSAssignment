@@ -7,22 +7,21 @@
 // if문
 function evenOrOdd(num) {
   if (num > 0) {
-    if (num % 2 == 0)
-      return console.log('Even');
-    else
-      return console.log('Odd');
+    if (num % 2) return 'Odd';
+    return 'Even';
   }
-  return;
+  return '0';
 }
 
 console.log(evenOrOdd(2)); // Even
+console.log(evenOrOdd(0)); // Even
 console.log(evenOrOdd(3)); // Odd
 console.log(evenOrOdd(1000)); // Even
 
 // 3항 연산자
 function evenOrOdd(num) {
 
-  var res = (num > 0) && (num % 2 == 0) ? 'Even' : 'Odd';
+  var res = (num > 0) && (num % 2) ? 'Even' : 'Odd';
 
   return res;
 }

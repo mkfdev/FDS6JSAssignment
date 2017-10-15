@@ -21,6 +21,7 @@ function getDayName(a, b) {
 
   //특정 날짜를 Date 객체에 담는다(주의: month는 0부터 시작하므로 month-1)
   var inputDay = new Date(2016, month - 1, date);
+  console.log(inputDay);
   //요일 구하기
   var dayofnames = weekNames[inputDay.getDay()];
 

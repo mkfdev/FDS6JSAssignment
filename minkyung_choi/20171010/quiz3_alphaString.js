@@ -29,3 +29,12 @@ console.log(alphaString46('723')); // false
 console.log(alphaString46('a234')); // false
 console.log(alphaString46('')); // false
 console.log(alphaString46()); // false
+
+/*
+s = s ? s : '';
+또는 
+if (s === undefined || s === null) {
+  s = '';
+}
+return /^\d{4,6}$/.test(s);
+*/
