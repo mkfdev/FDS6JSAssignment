@@ -6,7 +6,9 @@
 function nextSqaure(n) {
   var res = Math.sqrt(n);
   //정수인 제곱근을 판별
-  return (parseInt(res) - res === 0) ? Math.pow(res + 1, 2) : 'no';
+  //return (parseInt(res) - res === 0) ? Math.pow(res + 1, 2) : 'no';
+  //또는 정수인지 판별하는 isInteger사용
+  return Number.isInteger(res) ? Math.pow(res + 1, 2) : 'no';
 }
 
 console.log(nextSqaure()); // no
